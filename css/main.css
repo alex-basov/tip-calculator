@@ -3,7 +3,8 @@
   margin: 40px auto 0;
   padding: 50px;
   box-sizing: border-box;
-  background: url("https://images.designtrends.com/wp-content/uploads/2016/10/15173514/White-Watercolor-Paper-Texture.jpg?width=600") top left repeat;
+  background: url("https://image.freepik.com/free-photo/white-texture_1160-786.jpg") top left repeat;
+  background-size: cover;
   box-shadow: 0 10px 15px -8px #000;
   border-radius: 10px;
   text-align: center;
@@ -15,21 +16,85 @@ html {
 
 body {
   min-height: 100%;
+  font-family: "Dosis", sans-serif;
+}
+
+body,
+button,
+input,
+select {
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 1px;
 }
 
 button {
   cursor: pointer;
+  background: #7d5c65;
+  color: white;
   border: none;
+  border-bottom: 4px solid #222;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 20px 30px;
+  width: 100%;
+  letter-spacing: 4px;
+}
+button:hover {
+  background: #5b434a;
+  border-bottom-color: #111;
+}
+button:active {
+  position: relative;
+  top: 1px;
 }
 
 body {
   background: #333 url("/img/restaurant_dish.jpg") center center no-repeat;
   background-size: cover;
+  color: #495867;
 }
 
 h1 {
   margin: 0 0 20px;
   padding: 0 0 20px;
+}
+
+form {
+  text-align: left;
+}
+form input,
+form select {
+  padding: 8px;
+}
+form label {
+  display: block;
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+
+#totalTip {
+  font-size: 50px;
+  margin-top: 40px;
+}
+#totalTip:before {
+  content: "Tip amount";
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+#totalTip sup {
+  font-size: 24px;
+  top: -18px;
+}
+#totalTip small {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+}
+
+button {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */

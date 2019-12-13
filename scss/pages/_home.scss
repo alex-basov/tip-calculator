@@ -1,9 +1,52 @@
 body {
   background: #333 url('/img/restaurant_dish.jpg') center center no-repeat;
   background-size: cover;
+  color: $text-color;
 }
 
 h1 {
   margin: 0 0 20px;
   padding: 0 0 20px;
+}
+
+form {
+  text-align: left;
+  input,
+  select {
+    padding: 8px;
+  }
+
+  label {
+    display: block;
+    margin: 20px 0 10px;
+    font-weight: bold;
+  }
+}
+
+#totalTip {
+  font-size: 50px;
+  margin-top: 40px;
+
+  &:before {
+    content: 'Tip amount';
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+  }
+
+  sup {
+    font-size: 24px;
+    top: -18px;
+  }
+
+  small {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+  }
+}
+
+button {
+  margin-top: 40px;
 }
