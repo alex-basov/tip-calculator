@@ -2,7 +2,9 @@
 
 @import 'base/_normalize';
 
-@import "components/_buttons";
+@import 'layout/containers';
+@import 'layout/general';
 
-@import "pages/home";
+@import 'components/_buttons';
 
+@import 'pages/home';
